@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorails</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/bbb3501d27.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <body>
+    <div id="home">
+        <div class="container">
+            <nav>
+                <ul id="sidmenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Service">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+    <div class="text-box">
+        <h1>Hello, I'm <span>Lin Sreymao</span></h1>
+        <p>Welcome to my Portfolio. I'm a Developer from Cambodia.</p>
+    </div>
+
+    <img src="./image/backgroud.png" alt="Profile image">
+</div>
+
+        </div>
+    </div>
+    <!-- ---------about section------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./image/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Welcome to my portfolio, My name is Lin Sreymao. I am 19 years old. I come from Kampot Provinece. I study at Passerellesnumeriques Cambodia. I learn about IT skills.
+                        I learn at Passerellesnumeriques Cambodia for 2 years.
+                        And I got scholarship two years from Passerellesnumeriques Cambodia to study IT skills.
+                        I don't pay any money to study IT skill, food and accommodation.
+                        Because Passerellesnumeriques Cambodia support me to study IT skills or other skills.
+                        About IT skills, I learn many skills, such as Web Design, UI/UX Design, logic algorithm, General Englishl, English for IT environment, Git, Professionalife, 
+                        Deployment, Project managemtnt, Frontend , Backend and other skill.
+                        I always visit company to learn more about these skills.
+                        I have a lot of experience about these skills,
+                        such as <b> project Web Desing, project Algorithm and English for IT environment</b>.
+                        My goal is to create innovative and user-friendly digital solutions that make a positive impact and full Stack Development.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contians activ-tab" Id="Skills">
+                        <ul>
+                            <li><span>UI/UX<br></span>Design Web/App Interfeces</li>
+                            <li><span>Web Development<br></span>Web app Development</li>
+                            <li><span>App Development<br></span>Building Andriod/iOS app</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contians" Id="Experience">
+                        <ul>
+                            <li><span>2025 - Project & Present<br></span>Frontend Developer and Backend about Flip Flop Game</li>
+                            <li><span>2025 - Project & Present<br></span>UI/UX Designer and Create Website about Coffee shop</li>
+                            <li><span>2025 - Project & Present<br></span>English for IT environment</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contians" id="Education">
+                        <ul>
+                            <li><span>2024<br></span>High School Diploma -  High School</li>
+                            <li><span>2024<br></span>Earn a computer science degree from High school.</li>
+                            <li><span>2024<br></span>Certificate of appreciation -  High School</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------service section------ -->
+    <div id="Service">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Building fast, secure, and scalable websites using HTML, CSS, SASS, JavaScript, and modern
+                        frameworks
+                        like React and Node.js.</p> <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Designing intuitive and visually > appealing interfaces that improve user experience through
+                        wireframes, prototypes, and design systems.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Creating mobile app layouts for iOS > and Android with a focus on usability, accessibility,
+                        and
+                        seamless user interaction.</p> <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- -------Portfolio section------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./image/work-1.png" alt="Social Media App">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>A mobile-first platform enabling users to share posts, connect with friends, and chat in real
+                            time.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./image/work-2.png" alt="Music App">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Stream, download, and create playlists with personalized music recommendations and offline
+                            support.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./image/work-3.png" alt="Online Shopping App">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>E-commerce solution with product search, secure payments, and order tracking for a smooth
+                            shopping experience.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -------------contact section--------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sreymao.lin@student.passerellesnumeriques.org</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>066778213</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn2">download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="copyright">
+            <p>Lin Sreymao &copy; 2025  Passerellesnumeriques Cambodia</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontians = document.getElementsByClassName("tab-contians");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontian of tabcontians) {
+                tabcontian.classList.remove("activ-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("activ-tab");
+
+        }      
+    </script>
+    <script>
+        var sidmenu = document.getElementById("sidmenu");
+        function openmenu() {
+            sidmenu.style.right = "0";
+        }
+        function closemenu() {
+            sidmenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+    function openmenu() {
+        document.getElementById("sidmenu").classList.add("active");
+    }
+
+    function closemenu() {
+        document.getElementById("sidmenu").classList.remove("active");
+    }
+
+    // Optional: Add scrolled effect
+    window.addEventListener('scroll', function() {
+        const header = document.getElementById('header');
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+</script>
+</body>
+
+</html>
