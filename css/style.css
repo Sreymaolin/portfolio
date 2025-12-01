@@ -86,7 +86,7 @@ nav i {
     gap: 50px;
 }
 
-/* LEFT TEXT AREA */
+
 .header-text .text-box {
     max-width: 50%;
 }
@@ -107,7 +107,6 @@ nav i {
     opacity: 0.9;
 }
 
-/* RIGHT IMAGE */
 .header-text img {
     width: 350px;
     height: auto;
@@ -117,83 +116,41 @@ nav i {
     transition: 0.4s ease;
 }
 
-/* Hover effect */
 .header-text img:hover {
     transform: scale(1.05);
 }
-
-
-/* * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-}
-html{
-    scroll-behavior: smooth;
-    position: sticky;
-}
-
-body {
-    background-color: #080808;
-    color: #fff;
-}
-.container {
-    padding: 10px 10%;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 20px;
-
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 25px;
+.could {
     position: relative;
+    display: inline-block;
 }
 
-nav ul li a::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #ff004f;
+.could img {
+    width: 70%;
+    display: block;
+}
+
+.icons {
     position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
+    bottom: 15px;      /* move icons up from bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
 }
-
-nav ul li a:hover::after {
-    width: 100%;
-}
-
-.header-text {
-    margin-top: 180px;
-    font-size: 30px;
+.icons a {
     color: #fff;
+    font-size: 28px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-.header-text h1 {
-    font-size: 60px;
-    margin-top: 20px;
+.icons a:hover {
+    background: #fff;
+    color: #000;
 }
-
-.header-text h1 span {
-    color: #ff004f;
-    font-size: 70px;
-} */
-
 /*-------------------about section-------------- */
 #about {
     padding: 50px 0;
