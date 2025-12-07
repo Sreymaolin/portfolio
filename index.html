@@ -4,250 +4,529 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website - Easy Tutorails</title>
+    <title>Lin Sreymao | Web Developer Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://kit.fontawesome.com/bbb3501d27.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <body>
-    <div id="home">
+    <!-- Header & Navigation -->
+    <header id="header">
         <div class="container">
             <nav>
-                <ul id="sidmenu">
+                <a href="#home" class="logo">Sreymao <span>Lin</span></a>
+
+                <ul id="sidemenu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#Service">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    <!-- <li><a href="#" class="hire-btn">Hire Me</a></li> -->
+                    <!-- <i class="fas fa-times" onclick="closemenu()"></i> -->
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <!-- <i class="fas fa-bars" onclick="openmenu()"></i> -->
             </nav>
-
-            <div class="header-text">
-    <div class="text-box">
-        <h1>Hello, I'm <span>Lin Sreymao</span></h1>
-        <p>Welcome to my Portfolio. 
-            I'm a Professional Developer from Cambodia.</p>
-        <p>I'm creative designer and developer, 
-            and I'm very passionate and dedicated to my work.</p>
-    </div>
-    <div class="could">
-
-        <img src="./image/backgroup.jpg" alt="Profile image">
-        <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-    </div>
-</div>
-
         </div>
-    </div>
-    <!-- ---------about section------------ -->
-    <div id="about">
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
         <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="./image/user.png">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>
-                        Welcome to my portfolio, My name is Lin Sreymao. I am 19 years old. I come from Kampot Provinece. I study at Passerellesnumeriques Cambodia. I learn about IT skills.
-                        I learn at Passerellesnumeriques Cambodia for 2 years.
-                        And I got scholarship two years from Passerellesnumeriques Cambodia to study IT skills.
-                        I don't pay any money to study IT skill, food and accommodation.
-                        Because Passerellesnumeriques Cambodia support me to study IT skills or other skills.
-                        About IT skills, I learn many skills, such as Web Design, UI/UX Design, logic algorithm, General Englishl, English for IT environment, Git, Professionalife, 
-                        Deployment, Project managemtnt, Frontend , Backend and other skill.
-                        I always visit company to learn more about these skills.
-                        I have a lot of experience about these skills,
-                        such as <b> project Web Desing, project Algorithm and English for IT environment</b>.
-                        My goal is to create innovative and user-friendly digital solutions that make a positive impact and full Stack Development.
-                    </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('Education')">Education</p>
-                    </div>
-                    <div class="tab-contians activ-tab" Id="Skills">
-                        <ul>
-                            <li><span>UI/UX<br></span>Design Web/App Interfeces</li>
-                            <li><span>Web Development<br></span>Web app Development</li>
-                            <li><span>App Development<br></span>Building Andriod/iOS app</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contians" Id="Experience">
-                        <ul>
-                            <li><span>2025 - Project & Present<br></span>Frontend Developer and Backend about Flip Flop Game</li>
-                            <li><span>2025 - Project & Present<br></span>UI/UX Designer and Create Website about Coffee shop</li>
-                            <li><span>2025 - Project & Present<br></span>English for IT environment</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contians" id="Education">
-                        <ul>
-                            <li><span>2024<br></span>High School Diploma -  High School</li>
-                            <li><span>2024<br></span>Earn a computer science degree from High school.</li>
-                            <li><span>2024<br></span>Certificate of appreciation -  High School</li>
-                        </ul>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h3 class="greeting">Hello, I'm</h3>
+                    <h1 class="name">Lin <span>Sreymao</span></h1>
+                    <h2 class="title">Full-Stack Developer & UI/UX Designer</h2>
+                    <p class="description">Passionate web developer from Cambodia creating beautiful, functional
+                        websites and applications. Dedicated to delivering exceptional digital experiences.</p>
+
+                    <div class="cta-buttons">
+                        <a href="#portfolio" class="btn primary-btn">
+                            <i class="fas fa-eye"></i> View My Work
+                        </a>
+                        <a href="#contact" class="btn secondary-btn">
+                            <i class="fas fa-paper-plane"></i> Get In Touch
+                        </a>
                     </div>
 
+                    <div class="quick-info">
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Web B 2026</h4>
+                                <p>Student</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Phnom Penh</h4>
+                                <p>Cambodia</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <h4>Available</h4>
+                                <p>For Freelance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="./image/backgroup.jpg" alt="Lin Sreymao">
+                    <div class="social-links">
+                        <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- -------service section------ -->
-    <div id="Service">
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
         <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="service-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Development</h2>
-                    <p>Building fast, secure, and scalable websites using HTML, CSS, SASS, JavaScript, and modern
-                        frameworks
-                        like React and Node.js.</p> <a href="#">Learn more</a>
+            <h2 class="section-title">About <span>Me</span></h2>
+            <p class="section-subtitle">Get to know more about my journey and expertise</p>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="./image/user.png" alt="About Lin Sreymao">
+                    <div class="experience-badge">
+                        <h3>2+</h3>
+                        <p>Years Experience</p>
+                    </div>
                 </div>
-                <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Designing intuitive and visually > appealing interfaces that improve user experience through
-                        wireframes, prototypes, and design systems.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>Creating mobile app layouts for iOS > and Android with a focus on usability, accessibility,
-                        and
-                        seamless user interaction.</p> <a href="#">Learn more</a>
+
+                <div class="about-text">
+                    <h3>Passionate Developer & Designer</h3>
+                    <p>I'm an IT student at Passerellesnumériques Cambodia with strong focus on web development and
+                        design. My journey combines creativity with technical expertise to build digital solutions that
+                        make a difference.</p>
+
+                    <div class="personal-info">
+                        <div class="info-row">
+                            <div class="info-col">
+                                <p><strong>Name:</strong> Lin Sreymao</p>
+                                <p><strong>Age:</strong> 19 Years</p>
+                                <p><strong>Nationality:</strong> Cambodian</p>
+                            </div>
+                            <div class="info-col">
+                                <p><strong>Education:</strong> Passerellesnumériques</p>
+                                <p><strong>Languages:</strong> Khmer, English</p>
+                                <p><strong>Status:</strong> Student Developer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-container">
+                        <div class="tab-header">
+                            <button class="tab-link active" data-tab="skills">Skills</button>
+                            <button class="tab-link" data-tab="experience">Experience</button>
+                            <button class="tab-link" data-tab="education">Education</button>
+                        </div>
+
+                        <div class="tab-content active" id="skills">
+                            <ul>
+                                <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript, React.js</li>
+                                <li><strong>Backend:</strong> Node.js, Express.js, REST APIs</li>
+                                <li><strong>Design:</strong> Figma, UI/UX, Wireframing</li>
+                                <li><strong>Tools:</strong> Git, VS Code, Chrome DevTools</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content" id="experience">
+                            <ul>
+                                <li><strong>2025 - Present:</strong> Frontend Developer - Flip Flop Game</li>
+                                <li><strong>2025 - Present:</strong> UI/UX Designer - Coffee Shop Website</li>
+                                <li><strong>2024 - Present:</strong> Freelance Web Developer</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content" id="education">
+                            <ul>
+                                <li><strong>2024 - 2026:</strong> Passerellesnumériques Cambodia</li>
+                                <li><strong>2024:</strong> High School Diploma</li>
+                                <li><strong>Ongoing:</strong> Online Courses & Workshops</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
-    </div>
-    <!-- -------Portfolio section------ -->
-    <div id="portfolio">
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
+            <h2 class="section-title">Technical <span>Skills</span></h2>
+            <p class="section-subtitle">My technical expertise and proficiency levels</p>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML/CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>React.js</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Node.js</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Database</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>REST APIs</span>
+                            <span>78%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 78%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-paint-brush"></i> Design</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Figma</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>UI/UX</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Wireframing</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">My <span>Services</span></h2>
+            <p class="section-subtitle">What I can do for you</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom websites and web applications built with modern technologies and best practices.</p>
+                    <ul>
+                        <li>Responsive Design</li>
+                        <li>Performance Optimization</li>
+                        <li>Cross-browser Compatibility</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered designs that are both beautiful and functional for optimal user experience.</p>
+                    <ul>
+                        <li>Wireframing & Prototyping</li>
+                        <li>User Research</li>
+                        <li>Design Systems</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile App Design</h3>
+                    <p>Mobile-first designs for iOS and Android applications with focus on usability.</p>
+                    <ul>
+                        <li>App Prototypes</li>
+                        <li>UI Components</li>
+                        <li>User Testing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section-title">My <span>Portfolio</span></h2>
+            <p class="section-subtitle">Recent projects I've worked on</p>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
                     <img src="./image/work-1.png" alt="Social Media App">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>A mobile-first platform enabling users to share posts, connect with friends, and chat in real
-                            time.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <h3>Social Media Platform</h3>
+                            <p>React, Node.js, MongoDB</p>
+                            <div class="portfolio-links">
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="work">
+
+                <div class="portfolio-item">
                     <img src="./image/work-2.png" alt="Music App">
-                    <div class="layer">
-                        <h3>Music App</h3>
-                        <p>Stream, download, and create playlists with personalized music recommendations and offline
-                            support.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <h3>Music Streaming App</h3>
+                            <p>JavaScript, HTML5 Audio, CSS3</p>
+                            <div class="portfolio-links">
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="./image/work-3.png" alt="Online Shopping App">
-                    <div class="layer">
-                        <h3>Online Shopping App</h3>
-                        <p>E-commerce solution with product search, secure payments, and order tracking for a smooth
-                            shopping experience.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                <div class="portfolio-item">
+                    <img src="./image/work-3.png" alt="E-commerce App">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <h3>E-commerce Store</h3>
+                            <p>React, Stripe API, Firebase</p>
+                            <div class="portfolio-links">
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
+
+            <div class="stats-container">
+                <div class="stat-item">
+                    <h3>15+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <h3>10+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-item">
+                    <h3>2+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Client Satisfaction</p>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- -------------contact section--------- -->
-    <div id="contact">
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
         <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>sreymao.lin@student.passerellesnumeriques.org</p>
-                    <p><i class="fa-solid fa-phone-volume"></i>066778213</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <p class="section-subtitle">Let's work together on your next project</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>sreymao.lin@student.passerellesnumeriques.org</p>
+                        </div>
                     </div>
-                    <a href="images/my-cv.pdf" download class="btn2">download CV</a>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>(+855) 66 778 213</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Phnom Penh, Cambodia</p>
+                        </div>
+                    </div>
+
+                    <div class="social-contact">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+
+                    <a href="#" class="btn download-btn">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
                 </div>
 
-                <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn2">Submit</button>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
                     </form>
                 </div>
             </div>
-
-
-
-
         </div>
-        <div class="copyright">
-            <p>Lin Sreymao &copy; 2025  Passerellesnumeriques Cambodia</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Lin Sreymao. All Rights Reserved.</p>
+            <p>Passerellesnumériques Cambodia</p>
         </div>
-    </div>
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontians = document.getElementsByClassName("tab-contians");
+    </footer>
 
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontian of tabcontians) {
-                tabcontian.classList.remove("activ-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("activ-tab");
-
-        }      
-    </script>
+    <!-- JavaScript -->
     <script>
-        var sidmenu = document.getElementById("sidmenu");
+        // Mobile Menu Toggle
+        const sidemenu = document.getElementById("sidemenu");
+
         function openmenu() {
-            sidmenu.style.right = "0";
+            sidemenu.style.right = "0";
         }
+
         function closemenu() {
-            sidmenu.style.right = "-200px";
+            sidemenu.style.right = "-300px";
         }
 
+        // Tab Switching
+        const tabLinks = document.querySelectorAll('.tab-link');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                const tabId = link.getAttribute('data-tab');
+
+                // Remove active class from all tabs
+                tabLinks.forEach(l => l.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+
+                // Add active class to clicked tab
+                link.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+
+                    // Close mobile menu
+                    if (window.innerWidth <= 768) {
+                        closemenu();
+                    }
+                }
+            });
+        });
+
+        // Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
     </script>
-    <script>
-    function openmenu() {
-        document.getElementById("sidmenu").classList.add("active");
-    }
-
-    function closemenu() {
-        document.getElementById("sidmenu").classList.remove("active");
-    }
-
-    // Optional: Add scrolled effect
-    window.addEventListener('scroll', function() {
-        const header = document.getElementById('header');
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
-</script>
 </body>
 
 </html>
